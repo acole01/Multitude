@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+form {
+	font-size: 36pt;}
+.logonentry{
+	width: 500px;
+	height: 90px;
+	margin-bottom: 20px;
+	border-radius: 10px; 
+	border: none;
+	color: #ccc;
+	text-align:center;
+	font-family: Segoe, "Segoe UI Semilight", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:100; 
+}
+.logosubmit{
+	width: 500px;
+	height: 90px;
+	margin-bottom: 50px;
+	border-radius: 10px; 
+	border: none;
+	color: #fff;
+	background-color: #00a3ff;
+	text-align:center;
+	font-family: Segoe, "Segoe UI Semilight", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:100; 
+}
+.logosubmit:hover{
+	background: #106bb3;
+}

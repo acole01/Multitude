@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+.twocolumn{
+	position:absolute;
+	top:70px;
+	white-space: nowrap;
+	width: 100%;
+	overflow:hidden;
+	background-color: #111;
+	
+}
+.merchboxes{
+	float: left;
+	padding: 15px 45px 0px 30px;
+	width: 300px;
+	overflow-y:scroll;
+	border-right: 2px solid #222;
+	border-bottom: 2px solid #222;
+	background-color: #111;
+	background-image:url(../img/blkchk.gif);
+}
+.mbd{
+	width: 300px;
+	height: 200px;
+	background-color: #222;
+	color: #00a3ff;
+	margin-top: 20px;
+	border: 3px solid #106bb3;
+	border-radius: 7px;
+	padding 15px;
+}
+.mbd:last-child{
+	margin-bottom: 60px;
+}
+.mbd:hover{
+	background-color: #00A3FF;
+	color: #fff;
+}
+.mbImg{
+	background: transparent;
+	width: 120px;
+	height: 110px;
+	float: left;}
+.mbImg img{
+	height: 100%;
+	padding: 0;}
+.AdmisMbTitles{
+	font-size:38pt;
+	font-weight:700;
+	text-align: center;
+	padding-top: 30px;
+	}
+.mbTitles{
+	display:inline-block;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	width: 170px;
+	margin: 10px;
+	white-space:normal; 
+	font-variant:normal;
+	color: #fff;
+	font-size: 14pt;
+	line-height: 1.1em;
+	font-weight:500;
+	}
+.mbPriceQuant{
+	top: 0;
+	width: 280px;
+	padding: 0px 10px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+	font-variant:normal;
+	font-weight:400;	
+}
+.mbtable{
+	color: #106bb3;
+	width: 100%;
+	padding: none;
+	}
+.quantinterface{
+	color: #106bb3;
+	font-size: 36px;
+	line-height: .8em;
+	width: 120px;
+}
+.quantinterface td{
+	max-width: 15px;
+	text-align: center;
+	border: 2px solid #106bb3;
+	border-radius: 15px;
+	padding: 5px;*/
+	}
+.pricenumb, .quantnumb {
+	font-size:40px;
+	font-family:'Titillium web', Verdana, Geneva, sans-serif;
+	line-height: 1em;
+	font-weight:700;}
+.totals{
+	float:left;
+	padding: 20px 0px 0px 40px;
+	
+}
+.purchasing{
+	width: 320px;
+	height: 500px;
+	color: #222;
+	font-size:26px;
+	font-variant: normal;
+	font-weight:600;
+	border-radius: 10px;
+	z-index:50;
+}
+.ptitle{
+	color: #00a3ff;
+	font-size:24pt;
+	font-weight:700;
+	margin-bottom: 20px;}
+.cartItem{
+	padding: 10px;
+	border-bottom: 1px solid #222;
+	width: 350px;
+	color: white;
+	text-align: justify;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:400;
+}
+.ctablemerch{
+	display:none;
+	font-size: 24px;}
+td.merchtableName{
+	display: block;
+	width: 150px;
+	font-size: 13pt;
+	white-space: normal;
+	}
+.tableQuant{
+	width: 40px;
+	text-align: right;
+		}
+.tablePrice{
+	text-align:right;}
+.grandTotal{
+	color: #808080;
+	font-size: 18pt;
+	bottom: 0px;	
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: 400;
+	font-size: 14pt;
+}
+.GTPrice{
+	font-family:'Titillium web', Verdana, Geneva, sans-serif;
+	color: #00a3ff;
+	font-size: 48pt;
+	font-weight:700;
+	text-align: right;}
+.GTButton{
+	display:block;
+	margin-top: 10px;
+	background-color: #00a3ff;
+	border-radius: 10px;
+	border: none;
+	width: 100%;
+	color: #fff;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:400;
+	line-height: 2em;
+	text-align: center;}
+.GTButton:hover{
+	background-color: #106bb3;
+}
+.PayWhatWant{
+	display:block;
+	width: 98%;
+	height: 70px;
+	background-color: #222;
+	border-radius: 10px;
+	border: 3px solid #00a3ff;
+	color: #434343;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:400;
+	line-height: 2em;
+	text-align: center
+	;}

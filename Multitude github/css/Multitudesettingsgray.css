@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:'Ropa Sans', Verdana, Geneva, sans-serif;
+}
+.topnav{
+	display: none;
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: blue;
+}
+.underlogowrapper{
+	position: absolute;
+/*	top:100px;	*/
+	left: 0;
+}
+.logo{
+	padding: 10px;
+	height: 50px;
+	}
+.logosub{
+	margin-top: -7px;
+	margin-left: 21px;
+	color: #bbb;
+	font-size: 13px;
+}
+.leftnav{
+	position: absolute;
+	width: 250px;
+	z-index:15;
+}
+ul {
+	list-style-type: none;
+	color: #000;
+	font-size: 24px;
+	font-weight: 300;
+	text-shadow: 1px 1px #444;
+	
+}
+li{
+	border-bottom: 1px solid black;
+	box-shadow: 0px 1px #444;
+	margin-right: 10px;
+	padding: 8px 17px;
+}
+li:hover{
+	color: #fff;
+	text-shadow: 0px 0px 5px white;
+	/*background-color: black;
+	border-radius: 12px;*/
+	}
+.libreak{
+	/*height: 1em;*/
+	box-shadow: none;
+	border-bottom: none;
+}
+.libreak:hover{
+	background-color:transparent;
+}
+.settingssbg{
+	position: absolute;
+	display:block;
+	left: 251px;
+	background-image:url(../img/mottled222.gif);
+	background-color: #2d2d2d;
+	width: 700px;
+}
+.settingsscreen{
+	position: absolute;
+	left: 250px;
+	width: 700px;
+}
+.header{
+	height: 50px;
+	padding-top: 10px;
+	margin-bottom:0px;
+	width: 100%;	
+	font-size: 45px;
+	font-weight:400;
+	font-variant:  ;
+	border-bottom: solid, black;
+	text-shadow:-1px -1px 2px #red;
+}
+.headertext{
+	top: 0px;
+	color: black;
+	padding-left: 30px;
+	text-shadow: -1px -1px #333, 1px 1px 2px #555;
+}
+.sectionheader{
+	color:;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px  #555;	
+}
+.settingssub{
+	padding: 12px 29px;
+	background-image:url(../img/mottledccc.gif);
+	box-shadow: -1px -1px 3px #111, 1px 1px black, 2px 2px #555;
+	color: #1515151;
+	width: 75%;
+	max-width: 1000px;
+	margin-left: 70px;
+	margin-top: 50px;
+	border: none;
+	border-radius: 25px;
+}
+.setsubwrap{
+	padding: 0px 0px 7px 20px ;
+}
+table{
+	white-space:nowrap;
+	font-size: 22px;
+}
+table td{
+	min-width: 80px;
+	padding-right: 20px;	
+	text-shadow: 1px 1px  #555;
+}
+#GeneralTable .spacer{
+	width: 20px;
+	}
+#GeneralTable td{
+	height: 13px;
+}
+.answer{
+	text-align:right; 
+	font-size:15px;
+	font-weight:400;
+	color: #ECB000;
+	text-shadow: none;
+}
+.tablebutton{
+	min-height: 35px;
+	padding: 0;
+	text-align:center;
+	color: #eee;
+	font-size:15px;
+	font-weight:700;
+	background-image:url(../img/mottled 333.gif);
+	background-color:black;
+	
+	box-shadow: 1px 1px 3px #111, -1px -1px 1px #555;
+	border: none;
+	border-radius: 7px;
+}
+.tablebutton:hover{
+	text-shadow: 0px 0px 7px white;
+}
+.PrinterFrame {
+	width: 100%;
+	height: 300px;
+	border-radius: 0 0 7px 7px;
+	border: none;
+	box-shadow:  1px 1px #4c4c4c, -1px -1px 2px #222;
+}
+.PrinterTable body {
+	min-width: 623px;
+	background-color: #ggg;
+	height: 200px;
+}
+.PrinterTableHeader{
+	text-align:left; 
+	color: #000;
+	font-size:22px;
+	border-radius: 7px 7px 0px 0px;
+	box-shadow:  -1px -1px 2px #111;
+}
+.PrinterTableHeader th{
+	font-size:24px;
+	font-weight: lighter;
+	padding: 9px 0px 8px 70px;
+	text-shadow: 1px 1px  #555;
+	}
+.PrinterTable td{
+	padding:  5px 0px 6px 80px;
+	border-bottom: 1px solid #222;
+	text-shadow: 1px 1px  #4c4c4c;	
+	box-shadow: 0px 1px #222;
+	color: black;
+	}
+.PrinterTable tr:hover{
+	background-image:url(../img/mottled333.gif);
+}
+.PrinterTable td:hover{
+	color: orange;
+	text-shadow: 0px 0px 5px orange;
+}
+.PrinterTable a{
+	color: black;
+	text-decoration:none;
+	}
+
+.Locationrule{
+	margin-left: -29px;
+	width: 100%;
+	height: 3px;
+	background-color: transparent;
+	border-bottom: 1px solid #222;
+}
+#LocationTable td{
+	padding-left: 50px;
+}

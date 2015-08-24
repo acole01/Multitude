@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Printer Table Populated</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Ubuntu+Condensed|Share|Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--Commented out Reset- remove here to enable
+        <link rel="stylesheet" href="css/reset.css">
+        End of comment-->
+        <!--Comment out Base - type + form styling
+        <link rel="stylesheet" href="css/base.css">
+        End Comment-->
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/Multitudesettingscss.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+ <table class="PrinterTable" id="demo"></table>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+ <script>
+		var PrinterStatus = [
+      {
+        "Id": "8",
+        "name": "0.0.0.0",
+        "type": "2",
+        "networkname": "dev/null",
+        "group": "DEV",
+        "location": "Null Printer",
+        "description": "Null Printer",
+        "MAC": "00.00.00.00.00.00",
+        "LocationCode": "GRTH",
+        "Active": "1"
+      },
+      {
+        "Id": "1",
+        "name": "10.100.24.8",
+        "type": "1",
+        "networkname": "10.100.24.8",
+        "group": "DEV",
+        "location": "Test Bench",
+        "description": "Test Printer",
+        "LocationCode": "CLST",
+        "Active": "1"
+      },
+      {
+        "Id": "3",
+        "name": "10.200.79.201",
+        "type": "1",
+        "networkname": "10.200.79.201",
+        "group": "DEV",
+        "location": "Prod Boca Printer",
+        "description": "IST",
+        "MAC": "00.0D.71.04.C7.F6",
+        "LocationCode": "GRTH",
+        "Active": "1"
+      },
+      {
+        "Id": "29",
+        "name": "10.200.79.201",
+        "type": "1",
+        "networkname": "10.200.79.201",
+        "group": "DEV",
+        "location": "Spare Printer",
+        "description": "Spare Printer",
+        "LocationCode": "GRTH",
+        "Active": "1"
+      },
+      {
+        "Id": "28",
+        "name": "10.200.79.245",
+        "type": "1",
+        "networkname": "10.200.79.245",
+        "group": "DEV",
+        "location": "Cloisters Printer (CP3)",
+        "description": "Cloisters Printer (SN:299904)",
+        "MAC": "00.0D.71.04.C7.F8",
+        "LocationCode": "CLST",
+        "Active": "1"
+      },
+      {
+        "Id": "2",
+        "name": "10.200.79.6",
+        "type": "1",
+        "networkname": "10.200.79.6",
+        "group": "DEV",
+        "location": "Dev Wireless (10.200.79.6)",
+        "description": "Wireless",
+        "MAC": "00.0D.71.04.74.38",
+        "Active": "1"
+      },
+      {
+        "Id": "9",
+        "name": "Z220N000",
+        "type": "3",
+        "networkname": "10.200.79.40",
+        "group": "DEV",
+        "location": "Roaming",
+        "description": "Zebra Printer Z220N000",
+        "MAC": "ac:3f:a4:09:5c:58",
+        "Notes": "Zebra Printer",
+        "LocationCode": "CLST",
+        "Active": "0"
+      },
+      {
+        "Id": "10",
+        "name": "Z220N001",
+        "type": "3",
+        "networkname": "10.200.79.41",
+        "group": "DEV",
+        "location": "Roaming",
+        "description": "Zebra Printer Z220N001",
+        "MAC": "ac:3f:a4:09:96:f8",
+        "LocationCode": "GRTH",
+        "Active": "0"
+      },
+      {
+        "Id": "11",
+        "name": "Z220N002",
+        "type": "3",
+        "networkname": "10.200.79.42",
+        "group": "DEV",
+        "location": "Roaming",
+        "description": "Zebra Printer Z220N002",
+        "MAC": "ac:3f:a4:09:96:8c",
+        "LocationCode": "BRKH",
+        "Active": "0"
+      },
+      {
+        "Id": "12",
+        "name": "Z220N003",
+        "type": "3",
+        "networkname": "10.200.79.43",
+        "group": "DEV",
+        "location": "Roaming",
+        "description": "Zebra Printer Z220N003",
+        "MAC": "ac:3f:a4:09:5c:58",
+        "LocationCode": "CLST",
+        "Active": "0"
+      },
+      {
+        "Id": "8",
+        "name": "Z220N010",
+        "type": "3",
+        "networkname": "10.200.79.31",
+        "group": "DEV",
+        "location": "Roaming",
+        "description": "Zebra Printer Z220N010",
+        "MAC": "00:07:4D:4C:DE:E2",
+        "LocationCode": "GRTH",
+        "Active": "1"
+      },
+      {
+        "Id": "13",
+        "name": "Z220N016",
+        "type": "3",
+        "networkname": "10.200.79.37",
+        "group": "DEV",
+        "location": "Roaming",
+        "description": "Zebra Printer Z220N016",
+        "MAC": "00:07:4D:4C:DD:87",
+        "Notes": "Zebra Printer",
+        "LocationCode": "BRKH",
+        "Active": "1"
+      },
+      {
+        "Id": "17",
+        "name": "Z220N017",
+        "type": "3",
+        "networkname": "10.200.79.44",
+        "group": "DEV",
+        "location": "Merchandising Mobile Sales",
+        "description": "Zebra Printer Z220N017",
+        "MAC": "00:07:4D:57:1F:A9",
+        "Notes": "Zebra Printer",
+        "LocationCode": "MRCP",
+        "Active": "1"
+      },
+    {
+        "Id": "18",
+        "name": "Z220N018",
+        "type": "3",
+        "networkname": "10.200.79.45",
+        "group": "DEV",
+        "location": "Merchandising Mobile Sales",
+        "description": "Zebra Printer Z220N018",
+        "MAC": "00:07:4D:57:1E:35",
+        "Notes": "Zebra Printer",
+        "LocationCode": "MRCP",
+        "Active": "1"
+      },
+      {
+        "Id": "19",
+        "name": "Z220N019",
+        "type": "3",
+        "networkname": "10.200.79.46",
+        "group": "DEV",
+        "location": "Merchandising Mobile Sales",
+        "description": "Zebra Printer Z220N019",
+        "MAC": "00:07:4D:57:1E:9B",
+        "Notes": "Zebra printer",
+        "LocationCode": "MRCP",
+        "Active": "1"
+      },
+      {
+        "Id": "20",
+        "name": "Z220N020",
+        "type": "3",
+        "networkname": "10.200.79.47",
+        "group": "DEV",
+        "location": "Merchandising Mobile Sales",
+        "description": "Zebra Printer Z220N020",
+        "MAC": "00:07:4D:57:20:9F",
+        "Notes": "Zebra Printer",
+        "LocationCode": "MRCP",
+        "Active": "1"
+      },
+      {
+        "Id": "21",
+        "name": "Z220N021",
+        "type": "3",
+        "networkname": "10.200.79.48",
+        "group": "DEV",
+        "location": "Merchandising Mobile Sales",
+        "description": "Zebra Printer Z220N021",
+        "MAC": "ac:3f:a4:45:51:1e",
+        "Notes": "Zebra printer",
+        "LocationCode": "MRCP",
+        "Active": "1"
+      },
+      {
+        "Id": "22",
+        "name": "Z220N022",
+        "type": "3",
+        "networkname": "10.200.79.49",
+        "group": "DEV",
+        "location": "Merchandising Mobile Sales",
+        "description": "Zebra Printer Z220N022",
+        "MAC": "ac:3f:a4:46:30:64",
+        "Notes": "Zebra printer;",
+        "LocationCode": "MRCP",
+        "Active": "1"
+      }
+    ];
+	//get JSON attempt
+	// $.getJSON('data.json', function(data) {
+		var text = "";
+		var i;
+		for (i = 0; i < PrinterStatus.length; i++) {
+   			 text += "<tr><td width='70%' class='printerbutton'><a href=#>"+PrinterStatus[i].description + "</a></td><td>" + PrinterStatus[i].Active + "</td></tr>";
+		}
+//got rid of "add first row" (table headers) code because they're added in the html
+	//});
+// ^^^closing ".getJSON function
+		document.getElementById("demo").innerHTML = text;
+//GOOD^^^
+//wordfiltering the Active column
+        var firstIt = document.getElementById("demo").innerHTML; 
+        var firstDone = firstIt.replace(/<td>1<\/td>/g, "<td>Active<\/td>");
+        document.getElementById("demo").innerHTML = firstDone;
+        var secondIt = document.getElementById("demo").innerHTML; 
+        var secondDone = secondIt.replace(/<td>0<\/td>/g, "<td>???<\/td>");
+        document.getElementById("demo").innerHTML = secondDone;
+		</script>
+        <script>
+        //works
+		//$('.printerbutton').click(function() {
+		//	alert('hello');
+		//});
+		</script>
+        <script>
+		$(document).ready(function(){	
+				$('.printerbutton').click(function() {
+					$.ajax({
+						type: "POST", url: "http://citodev.metmuseum.org/MetTabletPrinterService/Ticket?Printer=10.200.79.31&Type=GenerateMultitudeTestTicket", data: {},
+							success: function(data){
+								//document.write(data);
+								alert(data);
+								}
+							,error: function(){
+								alert('Something broke!');
+								},
+							headers: {
+							   Accept: "application/json"
+								}				
+					});
+				});
+			});
+		</script>
+        <script>
+		$(document).ready(function wdoResize(){
+			var windowWidth = $(window).innerWidth();
+			$("#demo").width(windowWidth);
+		});
+		</script>
+</body>
+</html>
