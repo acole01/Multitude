@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+        <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Ubuntu+Condensed|Share|Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--Commented out Reset- remove here to enable
+        <link rel="stylesheet" href="css/reset.css">
+        End of comment-->
+        <!--Comment out Base - type + form styling
+        <link rel="stylesheet" href="css/base.css">
+        End Comment-->
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+ 
+<body>
+<div class="bgoverlay"></div>
+	<div class="logon"> Log In
+        <p>To use this application you must have a pin number associated with your employee ID. If you do not have an account, please request one from your supervisor</p>
+        <form >
+            <input class="logonentry" type="text" name="" placeholder="Employee ID">
+            <input class="logonentry pin" type="password" name="" placeholder="PIN">
+            <input type="submit" class="logonsubmit" value="Submit">
+        </form>
+    </div>
+    <div class="nextbutton" style="position: absolute; bottom: 30px; right: 30px; width: 160px; height: 70px; background: #00a3ff; color: #fff; border-radius: 15px; font-size: 38pt; font-family: 'Titillium Web'; font-weight:700; text-align:center;">Next</div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+		<script>
+			$(document).ready(function wdoResize(){
+				var windowHeight = $(window).innerHeight();
+				var windowWidth = $(window).innerWidth();
+				
+				$(".settingsscreen, .settingsbg").width(windowWidth-250);
+				$(".bgoverlay").height(windowHeight);
+				setTimeout(wdoResize, 500);
+			$(document).ready(function (){
+				$(".bgoverlay").height(windowHeight);
+			});
+        </script>
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+</body>

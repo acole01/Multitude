@@ -2,6 +2,7 @@
 /* CSS Document */
 .twocolumn{
 	position:absolute;
+	top:70px;
 	white-space: nowrap;
 	width: 100%;
 	overflow:hidden;
@@ -11,7 +12,10 @@
 .merchboxes{
 	float: left;
 	padding: 15px 45px 0px 30px;
+	width: 300px;
+	overflow-y:scroll;
 	border-right: 2px solid #222;
+	border-bottom: 2px solid #222;
 	background-color: #111;
 	background-image:url(../img/blkchk.gif);
 }
@@ -25,15 +29,27 @@
 	border-radius: 7px;
 	padding 15px;
 }
+.mbd:last-child{
+	margin-bottom: 60px;
+}
 .mbd:hover{
 	background-color: #00A3FF;
 	color: #fff;
 }
 .mbImg{
-	background-color: #00a3ff;
+	background: transparent;
 	width: 120px;
 	height: 110px;
 	float: left;}
+.mbImg img{
+	height: 100%;
+	padding: 0;}
+.AdmisMbTitles{
+	font-size:38pt;
+	font-weight:700;
+	text-align: center;
+	padding-top: 30px;
+	}
 .mbTitles{
 	display:inline-block;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
@@ -41,7 +57,7 @@
 	margin: 10px;
 	white-space:normal; 
 	font-variant:normal;
-	color: #00a3ff;
+	color: #fff;
 	font-size: 14pt;
 	line-height: 1.1em;
 	font-weight:500;
@@ -60,24 +76,52 @@
 	width: 100%;
 	padding: none;
 	}
+.mbtPQheaders{
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+	width: 50%;
+}
+.mbt{
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+}
+
+.pricenumb, .quantnumb {
+	display:inline-block;
+	margin-top: 10px;
+	width: 50%;
+	font-size:40px;
+	font-family:'Titillium web', Verdana, Geneva, sans-serif;
+	line-height: 1em;
+	font-weight:700;
+}
 .quantinterface{
 	color: #106bb3;
 	font-size: 36px;
 	line-height: .8em;
-	width: 120px;
-}
-.quantinterface td{
-	max-width: 15px;
-	text-align: center;
 	border: 2px solid #106bb3;
 	border-radius: 15px;
-	/*padding: 5px;*/
+	width: 120px;
+}
+.quantbox{
+	display:inline-block;
+	max-width: 15px;
+	text-align: center;
+	padding: 2px 6px 2px  2px;
 	}
-.pricenumb, .quantnumb {
-	font-size:40px;
-	font-family:'Titillium web', Verdana, Geneva, sans-serif;
-	line-height: 1em;
-	font-weight:700;}
+.quantbox:first-child{
+	border-right: 2px solid #106bb3;
+	padding: 5px 10px 8px 2px;
+}
+.quantbox:last-child{
+	border-left: 2px solid #106bb3;
+	padding: 5px 6px 8px 10px;
+}
+.quantbox:first-child:hover,.quantbox:last-child:hover{
+	color:#fff;
+}
 .totals{
 	float:left;
 	padding: 20px 0px 0px 40px;
@@ -108,10 +152,13 @@
 	font-weight:400;
 }
 .ctablemerch{
+	display:none;
 	font-size: 24px;}
-.tableName {
-	font-size: 24px;
-	white-space:normal;
+td.merchtableName{
+	display: block;
+	width: 150px;
+	font-size: 13pt;
+	white-space: normal;
 	}
 .tableQuant{
 	width: 40px;
@@ -128,6 +175,7 @@
 	font-size: 14pt;
 }
 .GTPrice{
+	font-family:'Titillium web', Verdana, Geneva, sans-serif;
 	color: #00a3ff;
 	font-size: 48pt;
 	font-weight:700;
@@ -160,9 +208,3 @@
 	line-height: 2em;
 	text-align: center
 	;}
-.AmbTitles{
-	font-size:38pt;
-	font-weight:700;
-	text-align: center;
-	padding-top: 30px;
-	}
