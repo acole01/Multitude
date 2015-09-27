@@ -150,15 +150,12 @@
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	font-weight:400;
 }
-.purchasing:last-child{
-
-}
 .ctablemerch{
 	display:none;
 	font-size: 24px;}
-.tableName{
+td.merchtableName{
 	display: block;
-	width: 120px;
+	width: 150px;
 	font-size: 13pt;
 	white-space: normal;
 	}
@@ -209,5 +206,5 @@
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	font-weight:400;
 	line-height: 2em;
-	text-align: center;
-}
+	text-align: center
+	;}
