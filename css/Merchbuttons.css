@@ -11,7 +11,7 @@
 }
 .merchboxes{
 	float: left;
-	padding: 15px 45px 0px 30px;
+	padding: 15px 45px 50px 30px;
 	width: 300px;
 	overflow-y:scroll;
 	border-right: 2px solid #222;
@@ -129,7 +129,6 @@
 }
 .purchasing{
 	width: 320px;
-	height: 500px;
 	color: #222;
 	font-size:26px;
 	font-variant: normal;
@@ -173,6 +172,7 @@ td.merchtableName{
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	font-weight: 400;
 	font-size: 14pt;
+	padding-bottom: 50px;
 }
 .GTPrice{
 	font-family:'Titillium web', Verdana, Geneva, sans-serif;
