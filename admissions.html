@@ -23,14 +23,15 @@
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/Multitudesettingscss.css">
         <link rel="stylesheet" href="css/Merchbuttons.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
                 
     </head>
  
 <body>
-    <div class="topnav">
-	<img src="" class="logo" />
-</div>
 <div id="underlogowrapper">
 <div class="leftnavbacker" style="position:fixed; width: 250px; height:250px;background-color: #111;border-right: 1px solid black;box-shadow: 1px 0px 3px #111; z-index:5;"></div>
     <div class="leftnav">
@@ -59,7 +60,7 @@
         <li>uDynamo</li>
     </ul>
     </div>
-    <div class="settingsbg" style="position:fixed; top: 0; height: 500px; width: 500px; left: 250px; background-image:url(img/escheresquedk.png);"></div>
+    <div class="settingsbg" style="position:fixed; top: 0; height: 500px; width: 500px; left: 250px; background-color:#111; url(img/ escheresquedk.png);"></div>
     <div class="settingsscreen">
         <div class="header">
           <div class="headertext"> Admission</div>
@@ -136,7 +137,7 @@
                             </div><!--/mbtable-->                        
                         </div><!--/mbPriceQuant-->   
                     </div><!--/mbd abuttons-->
-                    
+<!------------------------------------------------------------------->
                 </div><!--/merchboxes-->
                 <div class="totals">
                 	<div class="purchasing">
@@ -180,25 +181,21 @@
     </div>
 </div>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-	<script>
+
+<script>
 			$(document).ready(function wdoResize(){
 				var windowHeight = $(window).innerHeight();
 				var windowWidth = $(window).innerWidth();
 				
 				$(".settingsscreen, .settingsbg").width(windowWidth-250);
 				$(".leftnavbacker, .settingsbg").height(windowHeight);
-				$(".twocolumn").height(windowHeight-70);
-				
 				var totalsHeight = $(".totals").height();
 				$(".merchboxes").height(totalsHeight);
+				
 				setTimeout(wdoResize, 500);
 			});
-        </script>
-        <script>
+</script>
+<script>
 		$(document).ready(function(){
 		//ADULT TIX///////////////////////////////
 			var adultTixVar = 0

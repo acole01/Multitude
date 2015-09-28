@@ -22,15 +22,16 @@
         End Comment-->
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/Multitudesettingscss.css">
-        <link rel="stylesheet" href="css/MultitudeMerchdk.css">
+        <link rel="stylesheet" href="css/Merchbuttons.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         
     </head>
  
 <body>
-    <div class="topnav">
-	<img src="" class="logo" />
-</div>
 <div id="underlogowrapper">
 <div class="leftnavbacker" style="position:fixed; width: 250px; height:250px;background-color: #111;border-right: 1px solid black;box-shadow: 1px 0px 3px #111; z-index:5;"></div>
     <div class="leftnav">
@@ -60,77 +61,94 @@
         <li>uDynamo</li>
     </ul>
     </div>
-    <div class="settingsbg" style="position:fixed; height: 500px; width: 500px; left: 250px; top: 0; background-image:url(img/escheresquedk.png);"></div>
+    <div class="settingsbg" style="position:fixed; height: 500px; width: 500px; left: 250px; top: 0; background-image:url(img/ escheresquedk.png);background-color:#111;"></div>
     <div class="settingsscreen">
         <div class="header">
           <div class="headertext"> Merchandise</div>
         </div>
           	<div class="twocolumn">
             	<div class="merchboxes">
+<!------------------------------------------------------------------->
                 	<div class="mbd cat10"> 
                     	<div class="mbImg"><img src="img/merch/excat.png"></div>
                     	<div class="mbTitles">China: Through the Looking Glass SpEx Catalog (-10%)</div>
                     	<div class="mbPriceQuant">
-                        	<table class="mbtable">
-                        		<tr><td>Price</td><td width="100px">Quantity</td></tr>
-                        		<tr><td class="pricenumb">$44.09</td><td class="quantnumb">
-                                	<table class="quantinterface" border=0>
-                                    	<tr width="100px">
-                                          <td class="buttonminus">&#45;</td>
-                                          <td class="quantvalue">0</td>
-                                          <td class="buttonplus">&#43;</td></tr>
-                                     </table><!--/quantinterface-->
-                            </table><!--/mbtable-->                        
+                        <div class="mbtimgspacer"></div>
+                        	<div class="mbtable">
+                                <div class="mbtPQheaders">Price</div><div class="mbtPQheaders">Quantity</div>
+                                <div class="clearfix"></div>
+                                <div class="pricenumb">$44.09</div><div class="quantnumb">
+                                
+                                	<div class="quantinterface">
+                                          <div class="buttonminus quantbox">&#45;</div>
+                                          <div class="quantvalue quantbox">0</div>
+                                          <div class="buttonplus quantbox">&#43;</div>
+                                    </div><!--/.quantinterface-->
+                                </div><!--/.quantnumb-->
+                            </div><!--/mbtable-->                      
                         </div>
                     </div>
-                    
+<!------------------------------------------------------------------->
                     <div class="mbd poster">
                     	<div class="mbImg"><img src="img/merch/poster.png"></div>
                     	<div class="mbTitles">China: Through the Looking Glass Poster</div>
-                    	<div class="mbPriceQuant"><table class="mbtable">
-                        	<tr><td>Price</td><td width="100px">Quantity</td></tr>
-                        	<tr><td class="pricenumb">$25.00</td><td class="quantnumb">
-                            	<table class="quantinterface" border=0>
-                                    	<tr width="100px">
-                                          <td class="buttonminus">&#45;</td>
-                                          <td class="quantvalue">0</td>
-                                          <td class="buttonplus">&#43;</td></tr>
-                                     </table><!--/quantinterface-->
-                            </table><!--/mbtable-->        
+                    	<div class="mbPriceQuant">
+                        <div class="mbtimgspacer"></div>
+                        	<div class="mbtable">
+                                <div class="mbtPQheaders">Price</div><div class="mbtPQheaders">Quantity</div>
+                                <div class="clearfix"></div>
+                                <div class="pricenumb">$25.00</div><div class="quantnumb">
+                                
+                                	<div class="quantinterface">
+                                          <div class="buttonminus quantbox">&#45;</div>
+                                          <div class="quantvalue quantbox">0</div>
+                                          <div class="buttonplus quantbox">&#43;</div>
+                                    </div><!--/.quantinterface-->
+                                </div><!--/.quantnumb-->
+                            </div><!--/mbtable-->        
                         </div>
                     </div>
-                    
+<!------------------------------------------------------------------->
                     <div class="mbd postcard">
                     	<div class="mbImg"><img src="img/merch/postcard.png"></div>
                     	<div class="mbTitles">China: Through the Looking Glass Postcard</div>
-                    	<div class="mbPriceQuant"><table class="mbtable">
-                        	<tr><td>Price</td><td width="100px">Quantity</td></tr>
-                        	<tr><td class="pricenumb">$20.00</td><td class="quantnumb">
-                            	<table class="quantinterface" border=0>
-                                    	<tr width="100px">
-                                          <td class="buttonminus">&#45;</td>
-                                          <td class="quantvalue">0</td>
-                                          <td class="buttonplus">&#43;</td></tr>
-                                     </table><!--/quantinterface-->
-                            </table><!--/mbtable-->        
+                    	<div class="mbPriceQuant">
+                        <div class="mbtimgspacer"></div>
+                        	<div class="mbtable">
+                                <div class="mbtPQheaders">Price</div><div class="mbtPQheaders">Quantity</div>
+                                <div class="clearfix"></div>
+                                <div class="pricenumb">$20.00</div><div class="quantnumb">
+                                
+                                	<div class="quantinterface">
+                                          <div class="buttonminus quantbox">&#45;</div>
+                                          <div class="quantvalue quantbox">0</div>
+                                          <div class="buttonplus quantbox">&#43;</div>
+                                    </div><!--/.quantinterface-->
+                                </div><!--/.quantnumb-->
+                            </div><!--/mbtable-->        
                         </div>
                     </div>
-                  
+<!------------------------------------------------------------------->
                     <div class="mbd cat">
                     	<div class="mbImg"><img src="img/merch/excat.png"></div>
                     	<div class="mbTitles">China: Through the Looking Glass SpEx Catalog</div>
-                    	<div class="mbPriceQuant"><table class="mbtable">
-                        	<tr><td>Price</td><td width="100px">Quantity</td></tr>
-                        	<tr><td class="pricenumb">$48.99</td><td class="quantnumb">
-                            	<table class="quantinterface" border=0>
-                                    	<tr width="100px">
-                                          <td class="buttonminus">&#45;</td>
-                                          <td class="quantvalue">0</td>
-                                          <td class="buttonplus">&#43;</td></tr>
-                                     </table><!--/quantinterface-->
-                            </table><!--/mbtable-->        
+                    	<div class="mbPriceQuant">
+                        <div class="mbtimgspacer"></div>
+                        	<div class="mbtable">
+                                <div class="mbtPQheaders">Price</div><div class="mbtPQheaders">Quantity</div>
+                                <div class="clearfix"></div>
+                                <div class="pricenumb">$48.99</div><div class="quantnumb">
+                                
+                                	<div class="quantinterface">
+                                          <div class="buttonminus quantbox">&#45;</div>
+                                          <div class="quantvalue quantbox">0</div>
+                                          <div class="buttonplus quantbox">&#43;</div>
+                                    </div><!--/.quantinterface-->
+                                </div><!--/.quantnumb-->
+                            </div><!--/mbtable-->       
                         </div>
                     </div>
+<!------------------------------------------------------------------->
                 </div><!--/merchboxes-->
                 <div class="totals">
                 	<div class="purchasing">
@@ -170,11 +188,6 @@
     	</div><!--.settingsubwrapper>-->
     </div>
 </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
 		<script>
 			$(document).ready(function wdoResize(){
 				var windowHeight = $(window).innerHeight();
