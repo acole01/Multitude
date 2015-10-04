@@ -21,23 +21,25 @@
         <link rel="stylesheet" href="css/base.css">
         End Comment-->
         <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/MultitudeMain.css">
+        <link rel="stylesheet" href="css/Multitudesettingscss.css">
         <link rel="stylesheet" href="css/Merchbuttons.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-                
-    </head>
+</head>
  
 <body>
 <div id="underlogowrapper">
-<div class="leftnavbacker"></div>
-<div class="leftnav">
-    <div class="logo">Multitude</div>
-    <div class="logosub"> iPad Simulator | Merch Tester</div>
-    <ul>
+<div class="leftnavbacker" style="position:fixed; width: 250px; height:250px;background-color: #111;border-right: 1px solid black;box-shadow: 1px 0px 3px #111; z-index:5;"></div>
+    <div class="leftnav">
+    	<div class="logo"><span style=" font-family:'titillium web'; font-weight:900; color: #111; font-size:39px; text-shadow: 0px 1px 1px #ccc;">Multitude</span>
+        	<div class="logosub"> iPad Simulator | Merch Tester</div> 
+        </div>
+           
+     <ul>
     	<li class="liactive"> Admission</li>
         <li>Advanced Tickets</li>
         <li>Complimentary Admission</li>
@@ -57,13 +59,13 @@
         <li>Cash Drawer</li>
         <li>uDynamo</li>
     </ul>
-</div>
-<div class="settingsbg"></div>
-<div class="settingsscreen">
+    </div>
+    <div class="settingsbg" style="position:fixed; top: 0; height: 500px; width: 500px; left: 250px; background-image:url(img/escheresquedk.png);"></div>
+    <div class="settingsscreen">
         <div class="header">
           <div class="headertext"> Admission</div>
         </div>
-          	<div class="twocolumn">
+        <div class="twocolumn">
             	<div class="merchboxes">
 <!------------------------------------------------------------------->
                 	<div class="mbd abuttons"> 
@@ -135,32 +137,33 @@
                             </div><!--/mbtable-->                        
                         </div><!--/mbPriceQuant-->   
                     </div><!--/mbd abuttons-->
-<!------------------------------------------------------------------->
+<!---------------------------------------------->
                 </div><!--/merchboxes-->
+<!--============================================-->
                 <div class="totals">
                 	<div class="purchasing">
                     	<div class="ptitle">Purchasing</div>
-                    	<div class="cartItem " > 
-                        	<table class="ctable adult" >
+                    	<div class="cartItem"> 
+                        	<table class="ctable adult" style="display: none;">
                             	<tr><td class="tableName">Adult Ticket</td><td class="tableQuant">0</td><td class="tablePrice">$0.00</td></tr>
                             </table>
-                        </div>     
+                        </div><!--/ adults .cartItem-->    
                         <div class="cartItem"> 
-                        	<table class="ctable child" >
+                        	<table class="ctable child" style="display: none;">
                             	<tr><td class="tableName">Child Ticket</td><td class="tableQuant">1</td><td class="tablePrice">$0.00</td></tr>
                             </table>
-                        </div>    
+                        </div>  <!--/child .cartItem-->   
                         <div class="cartItem"> 
-                        	<table class="ctable senior" >
+                        	<table class="ctable senior" style="display: none;">
                             	<tr><td class="tableName">Senior Ticket</td><td class="tableQuant">1</td><td class="tablePrice">$17.00</td></tr>
                             </table>
-                        </div>
+                        </div> <!--/se.cartItem--> 
                          <div class="cartItem" > 
-                        	<table class="ctable student" >
+                        	<table class="ctable student" style="display: none;">
                             	<tr><td class="tableName">Student Ticket</td><td class="tableQuant">1</td><td class="tablePrice">$15.00</td></tr>
                             </table>
-                        </div>       
-                    </div>
+                        </div>  <!--/s.cartItem-->      
+                    </div><!--/.purchasing--> 
                     <div class="grandTotal">
                     Suggested Total
                     	<div class="GTPrice">$0.00</div>
@@ -168,10 +171,10 @@
                         <input class="PayWhatWant" type="text" name="" placeholder="Amount to Pay">
                         <input type="submit" class="GTButton" value="Finalize">
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </div><!--/.grandTotal--> 
+                </div><!--/.totals--> 
+            </div><!--/.twocolumn--> 
+        </div><!--/.settingscreen--> 
     <div class="SettingsSubWrapper">
     	
        
@@ -179,21 +182,26 @@
     </div>
 </div>
         
-
-<script>
+       
+	<script>
 			$(document).ready(function wdoResize(){
 				var windowHeight = $(window).innerHeight();
 				var windowWidth = $(window).innerWidth();
 				
 				$(".settingsscreen, .settingsbg").width(windowWidth-250);
 				$(".leftnavbacker, .settingsbg").height(windowHeight);
-				$(".twocolumn, .settingsscreen, ul").height(windowHeight-80);
-				$(".merchboxes").height(windowHeight-145);
+				$(".twocolumn").height(windowHeight-70);
+				
+				$(".totals").height(windowHeight-80);
+				$(".merchboxes").height(windowHeight-130);
+				var gtHeight = $(".grandTotal").height();
+				$(".purchasing").height(windowHeight-gtHeight-150);
+				
 				
 				setTimeout(wdoResize, 500);
 			});
-</script>
-<script>
+        </script>
+        <script>
 		$(document).ready(function(){
 		//ADULT TIX///////////////////////////////
 			var adultTixVar = 0

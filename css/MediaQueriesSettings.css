@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+/*mediaquery start*/
+@media screen and (max-height: 1000px) {
+	.ul{
+		font-size: 10px;
+	}
+    
+/*mediaquery end*/

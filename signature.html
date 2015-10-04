@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" rel="stylesheet"> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/MultitudeMain.css">
+        <link rel="stylesheet" href="css/signature.css">
+        <link rel="stylesheet" href="css/MultitudeMerchdk.css">
+        <link type="text/css" href="js/jquery.signature.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.signature.js"></script>
+    </head>
+ 
+<body>
+<div id="underlogowrapper">
+<div class="leftnavbacker"></div>
+    <div class="leftnav">
+    	<div class="logo">Multitude</div>
+    <div class="logosub"> iPad Simulator | Merch Tester</div>
+    <ul> 
+    	<li> Admission</li>
+        <li>Advanced Tickets</li>
+        <li>Complimentary Admission</li>
+        <li class="libreak"></li>
+        <li>New Member</li>
+        <li>Member Search</li>
+        <li class="libreak"></li>
+        <li>Donation</li>
+        <li class="libreak"></li>
+        <li class="liactive">Merchandise</li>
+        <li class="libreak"></li>
+        <li>Transactions</li>
+        <li>Send Email</li>
+        <li>Information</li>
+        <li class="libreak"></li>
+        <li>Settings</li>
+        <li>Cash Drawer</li>
+        <li>uDynamo</li>
+    </ul>
+    </div>
+    <div class="settingsbg" style="background-image:url(img/escheresquedk.png);"></div>
+    <div class="settingsscreen">
+        <div class="header">
+          <div class="headertext"> Payment Complete</div>
+        </div>
+        <div class="modal">
+        	<div class="signature">
+            	<div class="sign"> Sign Here</div>
+            	<div class="sigbuttonl" id="clearbutton">Clear</div>
+                <div class="sigbuttonr"id="donebutton">Done</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+			$(document).ready(function wdoResize(){
+				var windowHeight = $(window).innerHeight();
+				var windowWidth = $(window).innerWidth();
+				
+				$(".settingsscreen, .settingsbg").width(windowWidth-250);
+				$(".leftnavbacker, .settingsbg, .modal").height(windowHeight);
+				$(".settingsscreen, ul").height(windowHeight-80);
+				setTimeout(wdoResize, 500);
+			});
+			$(".signature").click(function(){
+				$(".sign").hide();
+				});
+			$(".signature").signature();
+			
+			$("#clearbutton").click(function(){
+				$(".signature").signature('clear');
+			});
+			$("#donebutton").click(function(){
+				$(".signature").signature('clear');
+			});
+        </script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+        
+</body>
