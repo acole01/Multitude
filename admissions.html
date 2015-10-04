@@ -169,7 +169,8 @@
                         <input type="submit" class="GTButton" value="Finalize">
                         </form>
                     </div>
-                </div>
+                </div><!--/.totals-->
+                <div class="nextbutton">Next</div>
             </div>
         </div>
     <div class="SettingsSubWrapper">
@@ -191,6 +192,9 @@
 				$(".merchboxes").height(windowHeight-145);
 				
 				setTimeout(wdoResize, 500);
+			});
+			$(".nextbutton").click(function(){
+				window.location.href='merchandise.html';
 			});
 </script>
 <script>
