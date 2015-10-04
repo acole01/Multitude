@@ -3,73 +3,57 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		
-        <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Ubuntu+Condensed|Share|Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <!--Commented out Reset- remove here to enable
-        <link rel="stylesheet" href="css/reset.css">
-        End of comment-->
-        <!--Comment out Base - type + form styling
-        <link rel="stylesheet" href="css/base.css">
-        End Comment-->
-        <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/Multitudesettingscss.css">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        
-    </head>
+        <script src="js/main.js"></script>		
+        <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Ubuntu+Condensed|Share|Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/MultitudeMain.css">
+        <link rel="stylesheet" href="css/settings.css">
+        <link rel="stylesheet" href="css/MediaQueriesSettings.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>        
+</head>
  
 <body>
-    <div class="topnav">
-	<img src="" class="logo" />
-    <div class="topstatus"> username machinename logout</div>
-</div>
-<div id="underlogowrapper">
-<div class="leftnavbacker" style="position:fixed; width: 250px; height:250px;background-color: #111;border-right: 1px solid black;box-shadow: 1px 0px 3px #111; z-index:5;"></div>
-    <div class="leftnav">
-    	<div class="logo"><span style=" font-family:'titillium web'; font-weight:900; color: #111; font-size:39px; text-shadow: 0px 1px 1px #ccc;">Multitude</span>
-        	<div class="logosub"> iPad Simulator | Merch Tester</div> 
-        </div>
-           
-     <ul>
-    	<li> Admission</li>
-        <li>Advanced Tickets</li>
-        <li>Complimentary Admission</li>
-        <li class="libreak"></li>
-        <li>New Member</li>
-        <li>Member Search</li>
-        <li class="libreak"></li>
-        <li>Donation</li>
-        <li class="libreak"></li>
-        <li>Merchandise</li>
-        <li class="libreak"></li>
-        <li>Transactions</li>
-        <li>Send Email</li>
-        <li>Information</li>
-        <li class="libreak"></li>
-        <li class="liactive">Settings</li>
-        <li>Cash Drawer</li>
-        <li>uDynamo</li>
+<div class="leftnavbacker"></div>
+<div class="leftnav">
+    <div class="logo">Multitude</div>
+    <div class="logosub"> iPad Simulator | Merch Tester</div>           
+      <ul>
+            <li> Admission</li>
+            <li>Advanced Tickets</li>
+            <li>Complimentary Admission</li>
+            <li class="libreak"></li>
+            <li>New Member</li>
+            <li>Member Search</li>
+            <li class="libreak"></li>
+            <li>Donation</li>
+            <li class="libreak"></li>
+            <li>Merchandise</li>
+            <li class="libreak"></li>
+            <li>Transactions</li>
+            <li>Send Email</li>
+            <li>Information</li>
+            <li class="libreak"></li>
+            <li class="liactive">Settings</li>
+            <li>Cash Drawer</li>
+            <li>uDynamo</li>
     </ul>
-    </div>
-    <div class="settingsbg" style="position:fixed; height: 500px; width: 500px; left: 250px; background-image:url(img/escheresquedk.png);"></div>
-    <div class="settingsscreen">
+</div><!--/.leftnav-->
+<div class="settingsbg" style="background:url(img/escheresquedk.png)"></div>
+<div class="settingsscreen">
         <div class="header">
           <div class="headertext"> Settings</div>
         </div>
-    <div class="SettingsSubWrapper">
-    	
+        
         <div class="general settingssub">
         <div class="sectionheader">General</div>
         <div class="setsubwrap">
@@ -82,38 +66,39 @@
         </div>
             
             <div class="settingssub printer">
-            <div class="sectionheader">Printer</div>
-            <div class="setsubwrap">
+            	<div class="sectionheader">Printer</div>
+            	<div class="setsubwrap">
             	<table class="PrinterTableHeader" width="100%">
                 <tr><th width="70%">Name</th><th>Status</th></tr>
                 </table>
             	<iframe class="PrinterFrame" src="PrinterTablePopulated.html"></iframe>
-            </div>
-            </div>
+            	</div>
+            </div><!--/.settingssub printer-->
             <div class="settingssub location">
-            <div class="sectionheader">Location</div>
-            <div class="setsubwrap">
-              <table id="LocationTable" table border="0" width="100%" >
-              <tr><td>Burke Hall</tr></td>
-              <tr><td>Cloisters Sales</tr></td>
-              <tr><td>Great Hall</tr></td>
-              <tr><td>Mobile Tablet Sales</tr></td>
-            </div>
-</div>
-    	</div><!--.settingsubwrapper>-->
-    </div>
-</div>
-        
-
-		<script>
+            	<div class="sectionheader">Location</div>
+            	<div class="setsubwrap">
+                    <table id="LocationTable" table border="0" width="100%" >
+                    <tr><td>Burke Hall</tr></td>
+                    <tr><td>Cloisters Sales</tr></td>
+                    <tr><td>Great Hall</tr></td>
+                    <tr><td>Mobile Tablet Sales</tr></td>
+                    </table>
+            	</div><!--/.setsubwrap-->
+			</div><!--/.settingsub location-->
+    </div><!--/.settingsscreen-->
+<script>
 			$(document).ready(function wdoResize(){
 				var windowHeight = $(window).innerHeight();
 				var windowWidth = $(window).innerWidth();
+				var leftnavWidth = $(".leftnav").width();
 				
 				$(".settingsscreen, .settingsbg").width(windowWidth-250);
 				$(".leftnavbacker, .settingsbg").height(windowHeight);
+				$(".settingsscreen").height(windowHeight-80);
+				$("ul").height(windowHeight-80);
 				setTimeout(wdoResize, 500);
 			});
+			$( "ul" ).scrollTop( 300 );
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

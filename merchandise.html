@@ -9,38 +9,26 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		
-        <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Ubuntu+Condensed|Share|Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <!--Commented out Reset- remove here to enable
-        <link rel="stylesheet" href="css/reset.css">
-        End of comment-->
-        <!--Comment out Base - type + form styling
-        <link rel="stylesheet" href="css/base.css">
-        End Comment-->
-        <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/Multitudesettingscss.css">
-        <link rel="stylesheet" href="css/Merchbuttons.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Ubuntu+Condensed|Share|Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/MultitudeMain.css">
+        <link rel="stylesheet" href="css/Merchbuttons.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         
     </head>
  
 <body>
 <div id="underlogowrapper">
-<div class="leftnavbacker" style="position:fixed; width: 250px; height:250px;background-color: #111;border-right: 1px solid black;box-shadow: 1px 0px 3px #111; z-index:5;"></div>
-    <div class="leftnav">
-    	<div class="logo"><span style=" font-family:'titillium web'; font-weight:900; color: #111; font-size:39px; text-shadow: 0px 1px 1px #ccc;">Multitude</span></div>
-    	<div class="logosub"> iPad Simulator | Merch Tester</div> 
-        
-
-       
-     <ul>
+<div class="leftnavbacker"></div>
+<div class="leftnav">
+    <div class="logo">Multitude</div>
+    <div class="logosub"> iPad Simulator | Merch Tester</div>
+    <ul>
     	<li> Admission</li>
         <li>Advanced Tickets</li>
         <li>Complimentary Admission</li>
@@ -60,14 +48,15 @@
         <li>Cash Drawer</li>
         <li>uDynamo</li>
     </ul>
-    </div>
-    <div class="settingsbg" style="position:fixed; height: 500px; width: 500px; left: 250px; top: 0; background-image:url(img/ escheresquedk.png);background-color:#111;"></div>
-    <div class="settingsscreen">
+</div>
+<div class="settingsbg"></div>
+<div class="settingsscreen">
         <div class="header">
           <div class="headertext"> Merchandise</div>
         </div>
           	<div class="twocolumn">
             	<div class="merchboxes">
+                	<div class="mbcontain">
 <!------------------------------------------------------------------->
                 	<div class="mbd cat10"> 
                     	<div class="mbImg"><img src="img/merch/excat.png"></div>
@@ -149,28 +138,29 @@
                         </div>
                     </div>
 <!------------------------------------------------------------------->
+                	</div><!--/.mbcontain-->
                 </div><!--/merchboxes-->
                 <div class="totals">
                 	<div class="purchasing">
                     	<div class="ptitle">Purchasing</div>
                     	<div class="cartItem"> 
-                        	<table class="ctablemerch cat10">
-                            	<tr><td class="merchtableName">China: Through The Looking Glass: ExCat (-10%)</td><td class="tableQuant">1</td><td class="tablePrice">$44.09</td></tr>
+                        	<table class="ctable cat10">
+                            	<tr><td class="tableName">China: Through The Looking Glass: ExCat (-10%)</td><td class="tableQuant">1</td><td class="tablePrice">$44.09</td></tr>
                             </table>
                         </div>                        
                         <div class="cartItem"> 
-                        	<table class="ctablemerch poster">
-                            	<tr><td class="merchtableName" >China: Through The Looking Glass Poster</td><td class="tableQuant">1</td><td class="tablePrice">$25.00</td></tr>
+                        	<table class="ctable poster">
+                            	<tr><td class="tableName" >China: Through The Looking Glass Poster</td><td class="tableQuant">1</td><td class="tablePrice">$25.00</td></tr>
                         	</table>
                         </div>
                         <div class="cartItem"> 
-                        	<table class="ctablemerch postcard">
-                            	<tr><td class="merchtableName" >China: Through The Looking Glass Postcards</td><td class="tableQuant">1</td><td class="tablePrice">$25.00</td></tr>
+                        	<table class="ctable postcard">
+                            	<tr><td class="tableName" >China: Through The Looking Glass Postcards</td><td class="tableQuant">1</td><td class="tablePrice">$25.00</td></tr>
                         	</table>
                         </div>
                         <div class="cartItem"> 
-                        	<table class="ctablemerch cat">
-                            	<tr><td class="merchtableName" >China: Through The Looking Glass ExCat</td><td class="tableQuant">1</td><td class="tablePrice">$25.00</td></tr>
+                        	<table class="ctable cat">
+                            	<tr><td class="tableName" >China: Through The Looking Glass ExCat</td><td class="tableQuant">1</td><td class="tablePrice">$25.00</td></tr>
                         	</table>
                         </div>
                     </div><!--/.purchasing-->
@@ -195,10 +185,9 @@
 				
 				$(".settingsscreen, .settingsbg").width(windowWidth-250);
 				$(".leftnavbacker, .settingsbg").height(windowHeight);
-				$(".twocolumn").height(windowHeight-70);
+				$(".twocolumn, .settingsscreen, ul").height(windowHeight-80);
+				$(".merchboxes").height(windowHeight-145);
 				
-				var totalsHeight = $(".totals").height();
-				$(".merchboxes").height(totalsHeight);
 				setTimeout(wdoResize, 500);
 			});
         </script>

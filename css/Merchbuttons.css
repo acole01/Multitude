@@ -2,7 +2,6 @@
 /* CSS Document */
 .twocolumn{
 	position:absolute;
-	top:70px;
 	white-space: nowrap;
 	width: 100%;
 	overflow:hidden;
@@ -11,8 +10,8 @@
 }
 .merchboxes{
 	float: left;
-	padding: 15px 45px 50px 30px;
-	width: 300px;
+	padding: 15px 25px 50px 30px;
+	width: 320px;
 	overflow-y:scroll;
 	border-right: 2px solid #222;
 	border-bottom: 2px solid #222;
@@ -153,25 +152,32 @@
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	font-weight:400;
 }
+.cartItem table, .cartItem td{
+	max-width:350px;
+}
+.ctable{
+	display: none;
+}
 .purchasing:last-child{
 
 }
-.ctablemerch{
-	display:none;
-	font-size: 24px;}
 .tableName{
 	display: block;
-	width: 120px;
+	width: 180px;
 	font-size: 13pt;
 	white-space: normal;
 	}
 .tableQuant{
-	width: 40px;
-	text-align: right;
+	width: 70px;
+	text-align: center;
 		}
 .tablePrice{
-	text-align:right;}
+	width: 100px;
+	text-align:right;
+}
 .grandTotal{
+	position:absolute;
+	width: 360px;
 	color: #808080;
 	font-size: 18pt;
 	bottom: 0px;	
@@ -213,4 +219,9 @@
 	font-weight:400;
 	line-height: 2em;
 	text-align: center;
+}
+.PayWhatWant{
+	font-family:'Titillium web', Verdana, Geneva, sans-serif;
+	color: #00a3ff;
+	font-size: 36pt;
 }

@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/base.css">
         End Comment-->
         <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/Multitudesettingscss.css">
+        <link rel="stylesheet" href="css/MultitudeMain.css">
         <link rel="stylesheet" href="css/Merchbuttons.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -33,13 +33,11 @@
  
 <body>
 <div id="underlogowrapper">
-<div class="leftnavbacker" style="position:fixed; width: 250px; height:250px;background-color: #111;border-right: 1px solid black;box-shadow: 1px 0px 3px #111; z-index:5;"></div>
-    <div class="leftnav">
-    	<div class="logo"><span style=" font-family:'titillium web'; font-weight:900; color: #111; font-size:39px; text-shadow: 0px 1px 1px #ccc;">Multitude</span>
-        	<div class="logosub"> iPad Simulator | Merch Tester</div> 
-        </div>
-           
-     <ul>
+<div class="leftnavbacker"></div>
+<div class="leftnav">
+    <div class="logo">Multitude</div>
+    <div class="logosub"> iPad Simulator | Merch Tester</div>
+    <ul>
     	<li class="liactive"> Admission</li>
         <li>Advanced Tickets</li>
         <li>Complimentary Admission</li>
@@ -59,9 +57,9 @@
         <li>Cash Drawer</li>
         <li>uDynamo</li>
     </ul>
-    </div>
-    <div class="settingsbg" style="position:fixed; top: 0; height: 500px; width: 500px; left: 250px; background-color:#111; url(img/ escheresquedk.png);"></div>
-    <div class="settingsscreen">
+</div>
+<div class="settingsbg"></div>
+<div class="settingsscreen">
         <div class="header">
           <div class="headertext"> Admission</div>
         </div>
@@ -143,22 +141,22 @@
                 	<div class="purchasing">
                     	<div class="ptitle">Purchasing</div>
                     	<div class="cartItem " > 
-                        	<table class="ctable adult" style="display: none;">
+                        	<table class="ctable adult" >
                             	<tr><td class="tableName">Adult Ticket</td><td class="tableQuant">0</td><td class="tablePrice">$0.00</td></tr>
                             </table>
                         </div>     
                         <div class="cartItem"> 
-                        	<table class="ctable child" style="display: none;">
+                        	<table class="ctable child" >
                             	<tr><td class="tableName">Child Ticket</td><td class="tableQuant">1</td><td class="tablePrice">$0.00</td></tr>
                             </table>
                         </div>    
                         <div class="cartItem"> 
-                        	<table class="ctable senior" style="display: none;">
+                        	<table class="ctable senior" >
                             	<tr><td class="tableName">Senior Ticket</td><td class="tableQuant">1</td><td class="tablePrice">$17.00</td></tr>
                             </table>
                         </div>
                          <div class="cartItem" > 
-                        	<table class="ctable student" style="display: none;">
+                        	<table class="ctable student" >
                             	<tr><td class="tableName">Student Ticket</td><td class="tableQuant">1</td><td class="tablePrice">$15.00</td></tr>
                             </table>
                         </div>       
@@ -189,8 +187,8 @@
 				
 				$(".settingsscreen, .settingsbg").width(windowWidth-250);
 				$(".leftnavbacker, .settingsbg").height(windowHeight);
-				var totalsHeight = $(".totals").height();
-				$(".merchboxes").height(totalsHeight);
+				$(".twocolumn, .settingsscreen, ul").height(windowHeight-80);
+				$(".merchboxes").height(windowHeight-145);
 				
 				setTimeout(wdoResize, 500);
 			});
