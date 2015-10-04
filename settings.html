@@ -85,7 +85,17 @@
                     </table>
             	</div><!--/.setsubwrap-->
 			</div><!--/.settingsub location-->
-            <div class="nextbutton" style="position:fixed">Next</div>
+            <div class="pageblurb">
+                <p><span class="pblead">Lets make some AJAX calls</span></p>
+                <div class="blurbwrapper" style="max-height:330px; overflow:auto;padding-right:10px; text-align:justify;">
+                <p>I modified the actual calls for obvious reasons- can't have people spamming The Met's ticket printers through my site. </p>
+                <p>The original the printer status table was populated externally by first calling a 'get' to the IT Department's printer network for the printer list as raw data. That was then parsed into JSON, which was then used to populate the table. Clicking any of the printers from the status table would fire off a 'post' asking the test printer to print a test ticket. For this preview I've collapsed that down so the table populates from another html page without calling the server.</p>
+                <p>Also notice the Multitude logo at top left. It doesn't convey important information so I set it back tonally to avoid distraction. Hover to give it a pop of color.
+                </div><!--/.wrapper-->
+                <p><span id="next" style="font-size:larger"><b> On to Admissions>></b></span></p>
+                <div class="blurbclose" >CLOSE</div> 
+   			</div>
+            <div class="blurbbutton" style="position:fixed">blurb</div>
     </div><!--/.settingsscreen-->
 <script>
 			$(document).ready(function wdoResize(){
@@ -99,8 +109,17 @@
 				$("ul").height(windowHeight-80);
 				setTimeout(wdoResize, 500);
 			});
-			$("ul").scrollTop( 300 );
-			$(".nextbutton").click(function(){
+			$("ul").scrollTop(400);
+			$(".pageblurb").fadeIn( 1000);
+			$(".blurbclose").click(function(){
+				 $(".pageblurb").fadeOut( 1000);
+				 $(".blurbbutton").fadeIn( 1000);
+			});
+			$(".blurbbutton").click(function(){
+				 $(".pageblurb").fadeIn( 1000);
+				 $(".blurbbutton").fadeOut( 1000);
+			});
+			$("#next").click(function(){
 				window.location.href='admissions.html';
 			});
         </script>

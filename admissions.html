@@ -14,12 +14,6 @@
 		
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900,700,600,300,200' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
-        <!--Commented out Reset- remove here to enable
-        <link rel="stylesheet" href="css/reset.css">
-        End of comment-->
-        <!--Comment out Base - type + form styling
-        <link rel="stylesheet" href="css/base.css">
-        End Comment-->
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/MultitudeMain.css">
         <link rel="stylesheet" href="css/Merchbuttons.css">
@@ -166,17 +160,17 @@
                     	<div class="GTPrice">$0.00</div>
                         <form>
                         <input class="PayWhatWant" type="text" name="" placeholder="Amount to Pay">
-                        <input type="submit" class="GTButton" value="Finalize">
-                        </form>
+                        <div class="GTButton" value="">Finalize</div>
                     </div>
                 </div><!--/.totals-->
-                <div class="nextbutton">Next</div>
+                <div class="blurbbutton">blurb</div>
             </div>
         </div>
-    <div class="SettingsSubWrapper">
-    	
-       
-    	</div>!--</.settingsubwrapper>-->
+        <div class="pageblurb">
+    	<p><span class="pblead">Pretty straightforward</span></p> Play around with the ticket calculator. I'm really proud of it- I came up with a neat modular way to keep track of ticket quantity and cost without relying on constantly refreshing the function. </p>
+        <p>Click "Finalize" to go to Merchandise.</p>
+        <div class="blurbclose" >CLOSE</div> 
+    </div>
     </div>
 </div>
         
@@ -193,8 +187,17 @@
 				
 				setTimeout(wdoResize, 500);
 			});
-			$(".nextbutton").click(function(){
+			$(".pageblurb").fadeIn( 1000);
+			$(".GTButton").click(function(){
 				window.location.href='merchandise.html';
+			});
+			$(".blurbclose").click(function(){
+				 $(".pageblurb").fadeOut( 1000);
+				 $(".blurbbutton").fadeIn( 1000);
+			});
+			$(".blurbbutton").click(function(){
+				 $(".pageblurb").fadeIn( 1000);
+				 $(".blurbbutton").fadeOut( 1000);
 			});
 </script>
 <script>

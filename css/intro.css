@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#00a3ff; 
+	color:#fff; 
+	font-family: 'Titillium Web';
+}
+a, a:visited{
+	color: #fff;
+	font-weight:600;
+}
+.container{
+	padding-top: 40px;
+}
+.title{
+	font-size:48pt; 
+	font-weight: 900; 
+	display:inline-block;
+}
+.subtitle{
+	font-size:22pt; 
+	display:inline-block; 
+	margin-left: 10px;
+}
+.blurb{
+	width:500px; 
+	text-align:justify; 
+	position:absolute; 
+	padding-bottom: 70px
+}

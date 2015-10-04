@@ -29,10 +29,18 @@
         <form >
             <input class="logonentry" type="text" name="" placeholder="Employee ID">
             <input class="logonentry pin" type="password" name="" placeholder="PIN">
-            <input type="submit" class="logonsubmit" value="Submit">
-        </form>
+            <!--<input type="submit" class="logonsubmit" id="submitbutton" value="Submit">
+        </form>-->
+        <div class="logonsubmit">Submit</div>
     </div>
-    <div class="nextbutton">Next</div>
+    <div class="pageblurb">
+    	<p><span class="pblead">What better place to begin than the redesigned Log In screen?</span></p>
+        <p>
+        Go ahead and enter the credentials 'guest'
+        and 'guestpass' and click submit to move on to the Settings page.</p>
+        <div class="blurbclose" >CLOSE</div> 
+    </div>
+    <div class="blurbbutton">blurb</div>
         
 <script>
 	$(document).ready(function wdoResize(){
@@ -43,10 +51,19 @@
 		$(".bgoverlay").height(windowHeight);
 		setTimeout(wdoResize, 500);
 	});
+	$(".pageblurb").fadeIn( 1000);
+			$(".blurbclose").click(function(){
+				 $(".pageblurb").fadeOut( 1000);
+				 $(".blurbbutton").fadeIn( 1000);
+			});
+			$(".blurbbutton").click(function(){
+				 $(".pageblurb").fadeIn( 1000);
+				 $(".blurbbutton").fadeOut( 1000);
+			});
 		$(document).ready(function (){
 		$(".bgoverlay").height(windowHeight);
 		});
-		$(".nextbutton").click(function(){
+		$(".logonsubmit").click(function(){
 			window.location.href='settings.html';
 		});
 </script>
