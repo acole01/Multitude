@@ -82,10 +82,12 @@
 			$(".signature").signature();
 			
 			$("#clearbutton").click(function(){
+				$(".sign").show();
 				$(".signature").signature('clear');
+				
 			});
 			$("#donebutton").click(function(){
-				$(".signature").signature('clear');
+				window.location.href='intro.html';
 			});
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

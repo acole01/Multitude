@@ -260,12 +260,6 @@
         document.getElementById("demo").innerHTML = secondDone;
 		</script>
         <script>
-        //works
-		//$('.printerbutton').click(function() {
-		//	alert('hello');
-		//});
-		</script>
-        <script>
 		$(document).ready(function(){	
 				$('.printerbutton').click(function() {
 					$.ajax({
@@ -286,7 +280,7 @@
         <script>
 		$(document).ready(function wdoResize(){
 			var windowWidth = $(window).innerWidth();
-			$("#demo").width(windowWidth);
+			$("#demo").width(windowWidth+10);
 		});
 		</script>
 </body>

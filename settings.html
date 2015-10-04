@@ -85,6 +85,7 @@
                     </table>
             	</div><!--/.setsubwrap-->
 			</div><!--/.settingsub location-->
+            <div class="nextbutton" style="position:fixed">Next</div>
     </div><!--/.settingsscreen-->
 <script>
 			$(document).ready(function wdoResize(){
@@ -98,7 +99,10 @@
 				$("ul").height(windowHeight-80);
 				setTimeout(wdoResize, 500);
 			});
-			$( "ul" ).scrollTop( 300 );
+			$("ul").scrollTop( 300 );
+			$(".nextbutton").click(function(){
+				window.location.href='admissions.html';
+			});
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
