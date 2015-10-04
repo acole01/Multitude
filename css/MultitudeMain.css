@@ -155,7 +155,8 @@ li:hover{
 	border: none;
 	border-radius: 6px;
 }
-.nextbutton{
+.nextbutton, .blurbbutton{
+	display:none;
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
@@ -169,8 +170,37 @@ li:hover{
 	font-weight: 700;
 	text-align: center;
 }
-.nextbutton:hover{
+.nextbutton:hover, .blurbclose:hover{
 	text-shadow: 0px 0px 7px white;
+}
+.pageblurb{
+	display:none;
+	position: fixed;
+    top: 100px;
+	right: 10%;
+    width: 300px;
+    border-radius: 20px;
+    padding: 30px 20px 55px;
+    background: #00a3ff;
+    color: #fff;
+	z-index: 20;
+}
+.pageblurb p{
+	margin: .8em 0;
+}
+.pblead{
+	font-size: larger;
+}
+.blurbclose{
+	border: 2px solid white;
+    width: 50px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2px;
+    right: 20px;
+    position: absolute;
+    /* font-size: large; */
+    font-weight: 600;
 }
 /*mediaquery start*/
 @media screen and (max-height: 1000px) {

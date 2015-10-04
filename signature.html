@@ -9,11 +9,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" rel="stylesheet"> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" rel="stylesheet"> 
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
@@ -62,10 +61,15 @@
             	<div class="sign"> Sign Here</div>
             	<div class="sigbuttonl" id="clearbutton">Clear</div>
                 <div class="sigbuttonr"id="donebutton">Done</div>
-            </div>
-        </div>
-    </div>
-</div>
+            </div><!--/.signature-->
+            <div class="pageblurb">
+    			<p>Made use of a Jquery plugin for signature functionality.</p>
+                <p>Scribble something in there and press "Done" to loop back to the intro.</p>
+                <div class="blurbclose" >CLOSE</div> 
+			</div><!--/.pageblurb-->
+            <div class="blurbbutton" style="position:fixed">blurb</div>
+        </div><!--/.MODAL-->
+    </div><!--/.settingsscreen-->
 <script>
 			$(document).ready(function wdoResize(){
 				var windowHeight = $(window).innerHeight();
@@ -75,6 +79,15 @@
 				$(".leftnavbacker, .settingsbg, .modal").height(windowHeight);
 				$(".settingsscreen, ul").height(windowHeight-80);
 				setTimeout(wdoResize, 500);
+			});
+			$(".pageblurb").fadeIn( 1000);
+			$(".blurbclose").click(function(){
+				 $(".pageblurb").fadeOut( 1000);
+				 $(".blurbbutton").fadeIn( 1000);
+			});
+			$(".blurbbutton").click(function(){
+				 $(".pageblurb").fadeIn( 1000);
+				 $(".blurbbutton").fadeOut( 1000);
 			});
 			$(".signature").click(function(){
 				$(".sign").hide();

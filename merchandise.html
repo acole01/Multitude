@@ -172,10 +172,11 @@
                 </div><!--/.totals-->
             </div>
         </div>
-    <div class="SettingsSubWrapper">
-    	
-       
-    	</div><!--.settingsubwrapper>-->
+    	<div class="pageblurb">
+    	Reused layout + calculator from Admissions, clicking "Finalize" takes you to the signature confirmation page. 
+        	<div class="blurbclose" >CLOSE</div>
+		</div><!--/.pageblurb-->
+       	<div class="blurbbutton" style="position:fixed">blurb</div>    	</div><!--.settingsubwrapper>-->
     </div>
 </div>
 		<script>
@@ -189,6 +190,15 @@
 				$(".merchboxes").height(windowHeight-145);
 				
 				setTimeout(wdoResize, 500);
+			});
+			$(".pageblurb").fadeIn( 1000);
+			$(".blurbclose").click(function(){
+				 $(".pageblurb").fadeOut( 1000);
+				 $(".blurbbutton").fadeIn( 1000);
+			});
+			$(".blurbbutton").click(function(){
+				 $(".pageblurb").fadeIn( 1000);
+				 $(".blurbbutton").fadeOut( 1000);
 			});
 			$(".GTButton").click(function(){
 				window.location.href='signature.html';

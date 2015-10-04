@@ -85,7 +85,14 @@
                     </table>
             	</div><!--/.setsubwrap-->
 			</div><!--/.settingsub location-->
-            <div class="nextbutton" style="position:fixed">Next</div>
+            <div class="pageblurb">
+                <p><span class="pblead">Lets make some AJAX calls</span></p>
+                <p>In the original the printer status table was externally populated by calling a 'get' to the IT Department's printer network for the printer list as raw data. That was then parsed into JSON, which was then used to populate the table. For my preview, I've collapsed that down so the table populates from another html page without calling the server.Clicking any of the printers from the status table would fire off a 'post' asking the test printer to print a test ticket.</p>
+                <p>I modified the actual calls to server for obvious reasons--can't have people spamming the printers at The Met through my webpage. </p>
+                <p><span id="next" style="font-size:larger"><b> On to Admissions>></b></span></p>
+                <div class="blurbclose" >CLOSE</div> 
+   			</div>
+            <div class="blurbbutton" style="position:fixed">blurb</div>
     </div><!--/.settingsscreen-->
 <script>
 			$(document).ready(function wdoResize(){
@@ -99,8 +106,17 @@
 				$("ul").height(windowHeight-80);
 				setTimeout(wdoResize, 500);
 			});
-			$("ul").scrollTop( 300 );
-			$(".nextbutton").click(function(){
+			$("ul").scrollTop(400);
+			$(".pageblurb").fadeIn( 1000);
+			$(".blurbclose").click(function(){
+				 $(".pageblurb").fadeOut( 1000);
+				 $(".blurbbutton").fadeIn( 1000);
+			});
+			$(".blurbbutton").click(function(){
+				 $(".pageblurb").fadeIn( 1000);
+				 $(".blurbbutton").fadeOut( 1000);
+			});
+			$("#next").click(function(){
 				window.location.href='admissions.html';
 			});
         </script>
