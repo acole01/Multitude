@@ -202,12 +202,3 @@ li:hover{
     /* font-size: large; */
     font-weight: 600;
 }
-/*mediaquery start*/
-@media screen and (max-height: 1000px) {
-	ul{
-		max height: 600px;
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-}
-/*mediaquery end*/
